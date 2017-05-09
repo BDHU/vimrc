@@ -127,3 +127,6 @@ set shiftwidth=4
 set expandtab
 
 colorscheme solarized
+
+" will enable you to escape insert mode by pressing 'jj'
+imap jj <Esc>
