@@ -22,8 +22,10 @@ filetype indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 
+" color theme
 colorscheme molokai
 
+" display line number by default"
 set number
 
 " Show file stats
