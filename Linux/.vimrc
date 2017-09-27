@@ -7,6 +7,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'flazz/vim-colorschemes'
 Plug 'bling/vim-airline'
 Plug 'morhetz/gruvbox'
+Plug 'nathanaelkane/vim-indent-guides'
 
 " Initialize plugin system
 call plug#end()
@@ -60,6 +61,11 @@ set background=dark
 
 " Enable syntax highlighting
 syntax enable 
+
+" indent on by default
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
 
 " tell vim where the tag files are
 set tags=./tags,tags;$HOME
