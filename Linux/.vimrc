@@ -7,7 +7,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'flazz/vim-colorschemes'
 Plug 'bling/vim-airline'
 Plug 'morhetz/gruvbox'
-Plug 'nathanaelkane/vim-indent-guides'
+Plug 'scrooloose/nerdtree'
 
 " Initialize plugin system
 call plug#end()
@@ -23,15 +23,11 @@ filetype indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 
+" color theme
 colorscheme gruvbox
 
+" display line number by default"
 set number
-
-" set tab to be equal to 4 spaces
-set tabstop=4
-
-" new tab is 4 spaces instead of 8
-set shiftwidth=4
 
 " Show file stats
 set ruler
@@ -40,12 +36,13 @@ set ruler
 syntax on
 
 set cursorline          " highlight current line
-
+ 
 set wildmenu            " visual autocomplete for command menu
-
+ 
 set showmatch           " highlight matching [{()}]
 
 set incsearch           " search as characters are entered
+
 set hlsearch            " highlight matches
 
 set showcmd             " show command in bottom bar
@@ -59,13 +56,11 @@ set encoding=utf-8
 " color scheme(terminal)
 set background=dark
 
+" set tab to be 4 spaces
+set expandtab ts=4 sw=4 ai
+
+" set editor to be 80 columns limit
+set colorcolumn=80
+
 " Enable syntax highlighting
 syntax enable 
-
-" indent on by default
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_start_level = 2
-let g:indent_guides_guide_size = 1
-
-" tell vim where the tag files are
-set tags=./tags,tags;$HOME
