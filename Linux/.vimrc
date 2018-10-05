@@ -35,6 +35,15 @@ set ruler
 " Turn on syntax highlighting
 syntax on
 
+" Indention
+set autoindent
+set smartindent
+set smarttab
+
+" no wrap lines
+set nowrap
+set linebreak
+
 set cursorline          " highlight current line
  
 set wildmenu            " visual autocomplete for command menu
@@ -49,6 +58,13 @@ set showcmd             " show command in bottom bar
 
 " Blink cursor on error instead of beeping (grr)
 set visualbell
+
+set scrolloff=5
+set ttyfast
+
+set incsearch
+set ignorecase
+set smartcase
 
 " Encoding
 set encoding=utf-8
