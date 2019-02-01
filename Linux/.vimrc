@@ -53,6 +53,9 @@ set visualbell
 " Encoding
 set encoding=utf-8
 
+" enable mouse
+set mouse=a
+
 " color scheme(terminal)
 set background=dark
 
