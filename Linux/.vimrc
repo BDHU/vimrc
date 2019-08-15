@@ -8,6 +8,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'bling/vim-airline'
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
+Plug 'milad14000/vim_p4'
 
 " Initialize plugin system
 call plug#end()
