@@ -9,9 +9,24 @@ Plug 'bling/vim-airline'
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
 Plug 'milad14000/vim_p4'
+Plug 'tpope/vim-commentary'
+Plug 'godlygeek/tabular'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'majutsushi/tagbar'
+Plug 'vim-scripts/autoload_cscope.vim'
+Plug 'luochen1990/rainbow'
+Plug 'chun-yang/auto-pairs'
+Plug 'mg979/vim-visual-multi'
+Plug 'airblade/vim-gitgutter'
+Plug 'brookhong/cscope.vim'
+Plug 'chazy/cscope_maps'
 
 " Initialize plugin system
 call plug#end()
+
+" Rendering
+set ttyfast
 
 " basic editor setting
 " Don't try to be vi compatible
@@ -84,3 +99,25 @@ set colorcolumn=80
 
 " Enable syntax highlighting
 syntax enable 
+
+
+" F8 for tagbar, required universial ctag installed
+" Plugin settings {
+    nmap <F8> :TagbarToggle<CR> 
+    let g:rainbow_active = 1    " enable rainbow cursor display
+
+    " omnicomplete
+    if v:version >= 700
+        set omnifunc=syntaxcomplete#Complete " override built-in C omnicomplete with C++ OmniCppComplete plugin
+        let OmniCpp_GlobalScopeSearch   = 1
+        let OmniCpp_DisplayMode         = 1
+        let OmniCpp_ShowScopeInAbbr     = 0 "do not show namespace in pop-up
+        let OmniCpp_ShowPrototypeInAbbr = 1 "show prototype in pop-up
+        let OmniCpp_ShowAccess          = 1 "show access in pop-up
+        let OmniCpp_SelectFirstItem     = 1 "select first item in pop-up
+        set completeopt=menuone,menu,longest
+    endif
+
+    " cscope setting
+    " source $HOME/.vim/plugged/cscope_maps/plugin/cscope_maps.vim
+" } end of plugin setting
