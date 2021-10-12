@@ -21,12 +21,16 @@ Plug 'mg979/vim-visual-multi'
 Plug 'airblade/vim-gitgutter'
 Plug 'brookhong/cscope.vim'
 Plug 'chazy/cscope_maps'
+Plug 'dijkstracula/vim-ivy'
 
 " Initialize plugin system
 call plug#end()
 
 " Rendering
 set ttyfast
+
+" to play along with tmux
+set t_Co=256
 
 " basic editor setting
 " Don't try to be vi compatible
