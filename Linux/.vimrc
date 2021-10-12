@@ -42,6 +42,15 @@ filetype indent on
 
 " Set to auto read when a file is changed from the outside
 set autoread
+au FocusGained,BufEnter * checktime
+
+" Fast saving
+nmap <leader>w :w!<cr>
+
+" :W sudo saves the file
+" (useful for handling the permission-denied error)
+command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
+
 
 " color theme
 colorscheme gruvbox
@@ -104,6 +113,17 @@ set colorcolumn=80
 " Enable syntax highlighting
 syntax enable 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Spell checking
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Pressing ,ss will toggle and untoggle spell checking
+map <leader>ss :setlocal spell!<cr>
+
+" Shortcuts using <leader>
+map <leader>sn ]s
+map <leader>sp [s
+map <leader>sa zg
+map <leader>s? z=
 
 " F8 for tagbar, required universial ctag installed
 " Plugin settings {
