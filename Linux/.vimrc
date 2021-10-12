@@ -5,7 +5,6 @@ call plug#begin('~/.vim/plugged')
 
 " color theme pack plugin
 Plug 'flazz/vim-colorschemes'
-Plug 'bling/vim-airline'
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
 Plug 'milad14000/vim_p4'
