@@ -13,13 +13,10 @@ Plug 'godlygeek/tabular'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'majutsushi/tagbar'
-Plug 'vim-scripts/autoload_cscope.vim'
 Plug 'luochen1990/rainbow'
 Plug 'chun-yang/auto-pairs'
 Plug 'mg979/vim-visual-multi'
 Plug 'airblade/vim-gitgutter'
-Plug 'brookhong/cscope.vim'
-Plug 'chazy/cscope_maps'
 Plug 'dijkstracula/vim-ivy'
 
 " Initialize plugin system
@@ -141,6 +138,5 @@ map <leader>s? z=
         set completeopt=menuone,menu,longest
     endif
 
-    " cscope setting
     " source $HOME/.vim/plugged/cscope_maps/plugin/cscope_maps.vim
 " } end of plugin setting
