@@ -49,7 +49,7 @@ command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 
 " color theme
-colorscheme gruvbox
+silent! colorscheme gruvbox
 
 " display line number by default"
 set number
