@@ -18,6 +18,7 @@ Plug 'chun-yang/auto-pairs'
 Plug 'mg979/vim-visual-multi'
 Plug 'airblade/vim-gitgutter'
 Plug 'dijkstracula/vim-ivy'
+Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 
 " Initialize plugin system
 call plug#end()
