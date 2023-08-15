@@ -6,6 +6,7 @@ call plug#begin('~/.vim/plugged')
 " color theme pack plugin
 Plug 'flazz/vim-colorschemes'
 Plug 'morhetz/gruvbox'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'scrooloose/nerdtree'
 Plug 'milad14000/vim_p4'
 Plug 'tpope/vim-commentary'
@@ -49,7 +50,8 @@ command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 
 " color theme
-silent! colorscheme gruvbox
+" silent! colorscheme gruvbox
+silent! colorscheme PaperColor
 
 " display line number by default"
 set number
@@ -108,6 +110,9 @@ set colorcolumn=80
 
 " Enable syntax highlighting
 syntax enable 
+
+set fillchars+=vert:│
+highlight EndOfBuffer ctermfg=black ctermbg=black
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Spell checking
